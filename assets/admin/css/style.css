@@ -1,0 +1,1012 @@
+.ss-slider {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: calc(100% - 22px);
+    height: auto;
+    margin: 15px 20px 15px 2px;
+    padding: 0;
+}
+
+.ss-slider,
+.ss-slider:before,
+.ss-slider:after,
+.ss-slider *,
+.ss-slider *:before,
+.ss-slider *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ss-slider .ss-button {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: auto;
+    height: 36px;
+    line-height: 34px;
+    margin: 0 5px 5px 0;
+    padding: 0 16px;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.ss-slider .ss-button:hover {
+    border-color: #b5b5b5;
+    color: #363636;
+}
+
+.ss-slider .ss-button:focus {
+    border-color: #3273dc;
+    color: #363636;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, .25);
+}
+
+.ss-slider .ss-button i {
+    margin-right: 5px;
+}
+
+.ss-slider .ss-button.ss-primary {
+    background-color: #3298dc;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-primary:hover {
+    background-color: #2793da;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-primary:focus {
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 0 0.125em rgba(50, 152, 220, .25);
+}
+
+.ss-slider .ss-button.ss-info {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-info:hover {
+    background-color: #00c4a7;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-info:focus {
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 0 0.125em rgba(0, 209, 178, .25);
+}
+
+.ss-slider .ss-button.ss-success {
+    background-color: #48c774;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-success:hover {
+    background-color: #3ec46d;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-success:focus {
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 0 0.125em rgba(72, 199, 116, .25);
+}
+
+.ss-slider .ss-button.ss-danger {
+    background-color: #f14668;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-danger:hover {
+    background-color: #f03a5f;
+    border-color: transparent;
+    color: #fff;
+}
+
+.ss-slider .ss-button.ss-danger:focus {
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 0 0.125em rgba(241, 70, 104, .25);
+}
+
+.ss-slider .ss-button.ss-warning {
+    background-color: #ffdd57;
+    border-color: transparent;
+    color: rgba(0, 0, 0, .7);
+}
+
+.ss-slider .ss-button.ss-warning:hover {
+    background-color: #ffdb4a;
+    border-color: transparent;
+    color: rgba(0, 0, 0, .7);
+}
+
+.ss-slider .ss-button.ss-warning:focus {
+    border-color: transparent;
+    color: rgba(0, 0, 0, .7);
+    box-shadow: 0 0 0 0.125em rgba(255, 221, 87, .25);
+}
+
+.ss-slider .ss-button.ss-disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+}
+
+.ss-slider .ss-alert {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: auto;
+    height: 36px;
+    line-height: 34px;
+    margin: 0 0 5px;
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.ss-slider .ss-alert.ss-primary {
+    border-color: rgba(29, 114, 170, 0.25);
+    background-color: #eef6fc;
+    color: #1d72aa;
+}
+
+.ss-slider .ss-alert.ss-info {
+    border-color: rgba(0, 148, 126, 0.25);
+    background-color: #ebfffc;
+    color: #00947e;
+}
+
+.ss-slider .ss-alert.ss-success {
+    border-color: rgba(37, 121, 66, 0.25);
+    background-color: #effaf3;
+    color: #257942;
+}
+
+.ss-slider .ss-alert.ss-danger {
+    border-color: rgba(204, 15, 53, 0.25);
+    background-color: #feecf0;
+    color: #cc0f35;
+}
+
+.ss-slider .ss-alert.ss-warning {
+    border-color: rgba(148, 118, 0, 0.25);
+    background-color: #fffbeb;
+    color: #947600;
+}
+
+.ss-slider .ss-right {
+    float: right;
+}
+
+.ss-slider .ss-loader {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.ss-slider .ss-loader i {
+    color: #fff;
+    font-size: 50px;
+}
+
+.ss-slider .ss-empty {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ss-slider>.ss-header {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ss-slider>.ss-body {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.ss-slider>.ss-body>.ss-list {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-body>.ss-list>table {
+    width: 100%;
+    color: #363636;
+    background-color: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #dddddd;
+}
+
+.ss-slider>.ss-body>.ss-list>table tr td,
+.ss-slider>.ss-body>.ss-list>table tr th {
+    border: 1px solid #dbdbdb;
+    border-width: 0 1px 1px 0;
+    padding: .5em .75em;
+    vertical-align: top;
+    text-align: left;
+}
+
+.ss-slider>.ss-body>.ss-list>table td:last-child,
+.ss-slider>.ss-body>.ss-list>table th:last-child {
+    border-right-width: 0;
+}
+
+.ss-slider>.ss-body>.ss-list>table td ul {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ss-slider>.ss-body>.ss-list>table td ul li {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 7px 0 0;
+    padding: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.ss-slider>.ss-body>.ss-list>table td ul li:last-child {
+    margin: 0;
+}
+
+.ss-slider>.ss-body>.ss-list>table td ul li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ss-slider>.ss-body>.ss-list>table td ul li span {
+    position: absolute;
+    z-index: 9;
+    bottom: 5px;
+    left: 5px;
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 20px;
+    background-color: #00d1b2;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.ss-slider>.ss-body .ss-connection {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-body .ss-connection .ss-field {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.ss-slider>.ss-body .ss-connection .ss-field>label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-body .ss-connection .ss-field>input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: calc(100% - 150px);
+    max-width: none;
+    height: 36px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+}
+
+.ss-slider>.ss-body .ss-connection .ss-field>input:hover {
+    border-color: #b5b5b5;
+}
+
+.ss-slider>.ss-body .ss-connection .ss-field>input:focus {
+    border-color: #3273dc;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, .25);
+}
+
+.ss-slider>.ss-content {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: calc(100% - 420px);
+    height: auto;
+    margin: 0 20px 0 0;
+    padding: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.ss-slider>.ss-content>.ss-headline {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 15px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ss-slider>.ss-content>.ss-settings {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-image {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 0 0;
+    padding: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-image>span {
+    position: absolute;
+    z-index: 10;
+    bottom: 5px;
+    left: 5px;
+    display: inline-block;
+    float: left;
+    width: calc(100% - 10px);
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #f14668;
+    text-align: center;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-image>span b {
+    color: #000;
+    font-weight: bold;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-image button {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 288px;
+    margin: 0;
+    padding: 0;
+    background-color: #dbdbdb;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-image button img {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-image button span {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    line-height: 290px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-image button:hover span {
+    opacity: 1;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: calc(100% - 320px);
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0 0 -1px;
+    padding: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li:last-child {
+    float: right;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li button.ss-button {
+    margin: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li button:not(.ss-button) {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: auto;
+    height: 46px;
+    line-height: 46px;
+    margin: 0;
+    padding: 0 20px;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    color: #363636;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li button:not(.ss-button):hover,
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li button:not(.ss-button):focus {
+    border-bottom-color: #363636;
+    color: #363636;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li button:not(.ss-button).active,
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li button:not(.ss-button).active:hover,
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-nav li button:not(.ss-button).active:focus {
+    border-bottom-color: #3273dc;
+    color: #3273dc;
+    cursor: auto;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li {
+    position: relative;
+    z-index: 1;
+    display: none;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li.active {
+    display: inline-block;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .ss-field-image {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 0;
+    padding: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .ss-field-image button {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 88px;
+    margin: 0;
+    padding: 0;
+    background-color: #dbdbdb;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .ss-field-image button img {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .ss-field-image button span {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    line-height: 88px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .ss-field-image button:hover span {
+    opacity: 1;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field:last-child {
+    margin-bottom: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>label.ss-target {
+    float: right;
+    width: auto;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field #wp-content-editor-tools {
+    padding-top: 0;
+    background-color: transparent;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .wp-editor-container {
+    border-radius: 4px;
+    border-color: #dddddd;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .wp-picker-container {
+    margin-top: 3px;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .wp-picker-container .wp-color-result.button {
+    margin-bottom: 0;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field textarea {
+    min-height: 160px;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field iframe {
+    min-height: 140px;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field button.wp-switch-editor {
+    margin: 0;
+    padding: 7px 15px;
+    height: auto;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field .mce-top-part::before {
+    display: none;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>input,
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>select {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: calc(100% - 150px);
+    max-width: none;
+    height: 36px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+}
+
+/*.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field.ss-target>input[type="text"] {*/
+/*    max-width: calc(100% - 350px);*/
+/*}*/
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field.ss-target>input[type="text"] {
+    width: calc(100% - 150px);
+    max-width: 100%;
+}
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>input:hover,
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>select:hover {
+    border-color: #b5b5b5;
+}
+
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>input:focus,
+.ss-slider>.ss-content>.ss-settings .ss-slide .ss-details .ss-option li .ss-field>select:focus {
+    border-color: #3273dc;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, .25);
+}
+
+.ss-slider>.ss-content>.ss-foot {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    border-top: 1px solid #dddddd;
+}
+
+.ss-slider>.ss-content>.ss-foot a {
+    margin: 0;
+}
+
+.ss-slider>.ss-sidebar {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-sidebar>.ss-box {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-headline {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 15px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-headline>button {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ss-slider>.ss-sidebar>.ss-box.active>.ss-headline>button i:before {
+    content: "\f0d7";
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings {
+    position: relative;
+    z-index: 1;
+    display: none;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+}
+
+.ss-slider>.ss-sidebar>.ss-box.active>.ss-settings {
+    display: inline-block;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings a,
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings button {
+    margin-bottom: 0;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings p {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 36px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting:last-child label {
+    margin-bottom: 0;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting input,
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting select {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 36px;
+    line-height: 34px;
+    margin: 0 0 5px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting:last-child input,
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting:last-child select {
+    margin-bottom: 0;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting input:hover,
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting select:hover {
+    border-color: #b5b5b5;
+}
+
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting input:focus,
+.ss-slider>.ss-sidebar>.ss-box>.ss-settings>.ss-setting select:focus {
+    border-color: #3273dc;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, .25);
+}

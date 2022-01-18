@@ -1,0 +1,317 @@
+.stimasoft-slider {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 1140px;
+    height: auto;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.stimasoft-slider *,
+.stimasoft-slider *::after,
+.stimasoft-slider *::before {
+    box-sizing: border-box;
+}
+
+.stimasoft-slider .swiper-container {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    max-height: none;
+    background-color: #ffffff;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide>a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px 55px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide.style-column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slider-slide-overlay {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image {
+    position: relative;
+    z-index: 99;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 340px;
+    height: 340px;
+    margin: 0;
+    padding: 10px;
+    border: 10px solid rgba(255, 255, 255, 0.6);
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image.ss-align-right {
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image.ss-align-left {
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image .stimasoft-slide-img {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image .stimasoft-slide-img img {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-content {
+    position: relative;
+    z-index: 99;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: calc(100% - 340px);
+    height: 100%;
+    min-height: 310px;
+    margin: 0;
+    padding: 0 50px;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide.style-column .stimasoft-slide-content {
+    width: 100%;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide.right .stimasoft-slide-content h3 {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-style: italic;
+    line-height: 50px;
+    font-family: serif;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide.right .stimasoft-slide-content p {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 40px 0 0;
+    padding: 0;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 36px;
+    font-family: serif;
+    letter-spacing: 0;
+    font-weight: 100;
+    text-align: center;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slide-nav {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    transform: translate(0, -50%);
+    background-color: #efab1b;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slide-nav.swiper-button-disabled {
+    opacity: .2;
+    cursor: not-allowed;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slide-nav span {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slide-nav span:before {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slide-next {
+    right: 10px;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slide-prev {
+    left: 10px;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slider-pagination {
+    position: absolute;
+    z-index: 9;
+    bottom: 15px;
+    left: 50%;
+    display: inline-block;
+    width: auto;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, 0);
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slider-pagination .swiper-pagination-bullet {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    background-color: #efab1b;
+    border: 1px solid #222;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.stimasoft-slider .swiper-container .stimasoft-slider-pagination .swiper-pagination-bullet:last-child {
+    margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide {
+        padding: 15px 10px;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-content,
+    .stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image {
+        width: 100%;
+        height: auto;
+        min-height: 1px;
+        padding: 0;
+    }
+    .stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-content * {
+        font-size: 100% !important;
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+    }
+    .stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image .stimasoft-slide-img {
+        text-align: center;
+    }
+    .stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image .stimasoft-slide-img img {
+        max-width: 50%;
+    }
+    .stimasoft-slider .swiper-container .swiper-slide .stimasoft-slider-slide .stimasoft-slide-image:before {
+        display: none;
+    }
+}
