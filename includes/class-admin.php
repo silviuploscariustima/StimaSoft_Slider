@@ -266,17 +266,12 @@ class StimaSoft_Admin
 			$slides = [];
 			$slidesArray = isset($_POST['slides']) ? (array) $_POST['slides'] : array();
 			foreach ($slidesArray as $slideData) {
-				$slideDataInfo = isset($slideData['data']) ? (array) $slideData['data'] : array();
-				$slideDataInfo = array_map('esc_attr', $slideDataInfo);
-				$slideDataOptions = isset($slideData['options']) ? (array) $slideData['options'] : array();
-				$slideDataOptions = array_map('esc_attr', $slideDataOptions);
-				$slides[] = [
-					'data' => $slideDataInfo,
-					'options' => $slideDataOptions,
-				];
+				$slideDataSanitize = sanitize_post($slideData, 'raw');
+				$slides[] = $slideDataSanitize;
 			}
+			var_dump($slides);
 			$options = isset($_POST['options']) ? (array) $_POST['options'] : array();
-			$options = array_map('esc_attr', $options);
+			$options = sanitize_post($options, 'raw');
 			if (isset($_POST['id']) && !empty($_POST['id'])) {
 				$sliderId = intval($_POST['id']);
 				if ($sliderId) {

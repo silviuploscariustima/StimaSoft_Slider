@@ -284,9 +284,9 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                         <?php $navigations = array('Hidden', 'Dots'); ?>
                         <?php foreach ($navigations as $navigation) : ?>
                             <?php if ($options['navigation'] == strtolower($navigation)) : ?>
-                                <option selected value="<?php echo strtolower($navigation); ?>"><?php $admin->translate($navigation); ?></option>
+                                <option selected value="<?php echo strtolower(esc_attr($navigation)); ?>"><?php $admin->translate($navigation); ?></option>
                             <?php else : ?>
-                                <option value="<?php echo strtolower($navigation); ?>"><?php $admin->translate($navigation); ?></option>
+                                <option value="<?php echo strtolower(esc_attr($navigation)); ?>"><?php $admin->translate($navigation); ?></option>
                             <?php endif; ?>
                         <?php endforeach; ?>
                     </select>

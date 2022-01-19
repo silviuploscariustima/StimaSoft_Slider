@@ -6,7 +6,7 @@
  * Plugin Name:       StimaSoft Slider
  * Plugin URI:        http://www.stimasoft.com
  * Description:       A simple slider plugin
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            StimaSoft
  * Text Domain:       stimasoft-slider
  * Domain Path:       /languages
