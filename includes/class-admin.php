@@ -269,7 +269,6 @@ class StimaSoft_Admin
 				$slideDataSanitize = sanitize_post($slideData, 'raw');
 				$slides[] = $slideDataSanitize;
 			}
-			var_dump($slides);
 			$options = isset($_POST['options']) ? (array) $_POST['options'] : array();
 			$options = sanitize_post($options, 'raw');
 			if (isset($_POST['id']) && !empty($_POST['id'])) {
